@@ -10,5 +10,5 @@ class Post extends Model
 {
     use SoftDeletes;
     use HasFactory;
-    protected $fillable = ['title','text','preview','author','image'];
+    protected $fillable = ['title', 'text', 'preview', 'author', 'image'];
 }
