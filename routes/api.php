@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ContactController;
+use App\Models\Post;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,6 +19,8 @@ use App\Http\Controllers\ContactController;
 
 
 Route::get('/post/index', [PostController::class,'index']);
+Route::get('/post/{id}',[PostController::class,'show']);
 Route::post('/contact/store',[ContactController::class,'store']);
-Route::post('/contact/index',[ContactController::class,'index']);
+Route::get('/contact/index',[ContactController::class,'index']);
+
 
