@@ -12,8 +12,10 @@ class PostController extends Controller
      *
      * @return string JSON
      */
-    public function show()
+    public function index()
     {
-        return Post::all();
+        return response()->json(
+            Post::all()
+        );
     }
 }
