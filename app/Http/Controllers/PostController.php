@@ -18,6 +18,11 @@ class PostController extends Controller
         );
     }
 
+     /**
+     * Retornando um post especifíco
+     *
+     * @return string JSON
+     */
     public function show(Post $id){
         return response()->json(
             $id
