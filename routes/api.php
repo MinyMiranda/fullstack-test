@@ -18,9 +18,9 @@ use App\Models\Post;
 */
 
 
-Route::get('/post/index', [PostController::class,'index']);
-Route::get('/post/{id}',[PostController::class,'show']);
-Route::post('/contact/store',[ContactController::class,'store']);
-Route::get('/contact/index',[ContactController::class,'index']);
+Route::get('/posts/index', [PostController::class,'index']);
+Route::get('/posts/{id}',[PostController::class,'show']);
+Route::post('/contacts/store',[ContactController::class,'store']);
+Route::get('/contacts/index',[ContactController::class,'index']);
 
 
