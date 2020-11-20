@@ -20,4 +20,16 @@ class ContactController extends Controller
         Contact::create($request->validated());
         return response()->json("Mensagem enviada!");
     }
+
+     /**
+     * Retornando todos as mensagens de contato.
+     *
+     * @return string JSON
+     */
+    public function index()
+    {
+        return response()->json(
+            Contact::all()
+        );
+    }
 }
