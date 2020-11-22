@@ -1,3 +1,9 @@
+import Vue from 'vue'
+
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -7,6 +13,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+
+import router from "./Router/route.js";
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,7 +27,11 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('navbar', require('./components/Navbar.vue').default);
+Vue.component('twocardleft', require('./components/TwoCardLeft.vue').default);
+Vue.component('twocardright', require('./components/TwoCardRight.vue').default);
+Vue.component('onecard', require('./components/OneCard.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,4 +41,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    router
 });

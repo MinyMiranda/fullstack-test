@@ -24,7 +24,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->sentence(2),
             'text' => $this->faker->sentence(490),
-            'preview' => $this->faker->paragraph,
+            'preview' => $this->faker->paragraph(2),
             'author' => $this->faker->name,
             'image'=> 'https://source.unsplash.com/640x640/?rock-concert',
         ];
