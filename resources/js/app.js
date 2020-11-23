@@ -1,9 +1,12 @@
 import Vue from 'vue'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import VueSweetalert2 from 'vue-sweetalert2';
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(VueSweetalert2);
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -15,6 +18,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import router from "./Router/route.js";
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -32,6 +36,7 @@ Vue.component('navbar', require('./components/Navbar.vue').default);
 Vue.component('twocardleft', require('./components/TwoCardLeft.vue').default);
 Vue.component('twocardright', require('./components/TwoCardRight.vue').default);
 Vue.component('onecard', require('./components/OneCard.vue').default);
+Vue.component('modal', require('./components/Modal.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -41,5 +46,5 @@ Vue.component('onecard', require('./components/OneCard.vue').default);
 
 const app = new Vue({
     el: '#app',
-    router
+    router,
 });

@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6">
+    <div class="col-md-6 col-12">
     <div class="card" style="width: 100%">
       <div class="row no-gutters">
         <div class="col-md-8">
@@ -8,9 +8,9 @@
             <h2 class="card-title text-title-warning">{{ post.title }}</h2>
             <p class="card-text">{{ post.preview }}</p>
           </div>
-          <div class="postion-absolute mr-2">
-            <b-icon class="float-right" icon="chevron-double-right"></b-icon>
-          </div>
+          <a :href="'post/'+post.id" class="postion-absolute mr-2">
+            <b-icon class="float-right mr-2" icon="chevron-double-right"></b-icon>
+          </a>
         </div>
         <div class="col-md-4">
           <img src="https://source.unsplash.com/640x640/?rock-concert" class="card-img" alt="..." />
@@ -24,6 +24,10 @@ export default {
   props: {
     post: {
       type: Object,
+      required: true,
+    },
+    baseUrl: {
+      type: String,
       required: true,
     },
   },

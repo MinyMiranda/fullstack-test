@@ -1,0 +1,54 @@
+.card {
+    border-radius: 0rem;
+}
+.col-8, .col-md-8, .col-6, .col-md-6 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+@media (max-width: 768px) {
+    .col-8, .col-md-8, .col-6, .col-md-6 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.text-title-warning {
+    color: #f1a10a;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 43px;
+}
+.card-author {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+}
+a {
+    color: black;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.ml-10 {
+    margin-left: 10rem !important;
+}
+.mr-10 {
+    margin-right: 10rem !important;
+}
+p.card-text-post {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 100px;
+    padding-bottom: 10%;
+}
+body {
+    background: linear-gradient(100deg, #F1A10A, #342303);
+}
+.modal-header {
+    border-bottom: 0px;
+}

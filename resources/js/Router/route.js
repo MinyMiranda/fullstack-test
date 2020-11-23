@@ -15,7 +15,7 @@ const routes = [
     },
     {
         name: 'post',
-        path: '/post',
+        path: '/post/:id',
         component: Post
     },
 

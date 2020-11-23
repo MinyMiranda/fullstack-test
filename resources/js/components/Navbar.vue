@@ -9,8 +9,8 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-navbar-nav class="mr-10">
-          <b-nav-item href="#" class="text-navbar">Posts</b-nav-item>
-          <b-nav-item href="#" class="ml-5 text-navbar">Contact</b-nav-item>
+          <b-nav-item href="/" class="text-navbar">Posts</b-nav-item>
+          <b-nav-item href="#" class="ml-5 text-navbar" @click="$bvModal.show('bv-modal-contact')">Contact</b-nav-item>
         </b-navbar-nav>
       </b-navbar-nav>
     </b-collapse>

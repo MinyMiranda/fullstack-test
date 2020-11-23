@@ -14,26 +14,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<style>
-    .navbar-dark .navbar-nav .nav-link {
-        color: white;
-    }
-
-    .ml-10 {
-        margin-left: 10rem !important;
-    }
-
-    .mr-10 {
-        margin-right: 10rem !important;
-    }
-
-    body {
-        background: linear-gradient(100deg, #F1A10A, #342303);
-    }
-</style>
-
 <body>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
