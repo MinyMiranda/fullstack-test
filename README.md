@@ -27,5 +27,6 @@ Para construção do projeto foi utilizado as seguintes tecnologias:
      - SweetAlert.
 - Back-end.
      - Laravel versão 8.
+          -laravel-ui vuejs
  
-O bootstrap foi utilizado para conseguir entregar uma interface melhor e ajudar na responsividade do site, já o SweetAlert foi utilizado para exibir mensagens de erros ou sucesso para o usuário.
+O bootstrap foi utilizado para conseguir entregar uma interface melhor e ajudar na responsividade do site, já o SweetAlert foi utilizado para exibir mensagens de erros ou sucesso para o usuário. Como o framework laravel da a possibilidade de trabalhar o VueJs com laravel escolhi usar laravel-ui que facilita o processo de desenvolvimento.
