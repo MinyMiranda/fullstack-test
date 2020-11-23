@@ -9,13 +9,13 @@
           <b-form-input id="name" name="name" type="text" required v-model="form.name" placeholder="Fill your full name"></b-form-input>
         </b-form-group>
         <b-form-group id="input-group-3" label="E-mail" label-for="email">
-          <b-form-input id="email" name="email" type="email" v-model="form.email" placeholder="Fill a valid e-mail"></b-form-input>
+          <b-form-input id="email" name="email" type="email" v-model="form.email" required placeholder="Fill a valid e-mail"></b-form-input>
         </b-form-group>
         <b-form-group id="input-group-4" label="Phone" label-for="phone">
           <b-form-input id="phone" name="phone" type="text" required v-model="form.phone" placeholder="Fill your phone"></b-form-input>
         </b-form-group>
         <b-form-group id="input-group-2" label="Post" label-for="message">
-          <b-form-textarea id="message" name="message" rows="5" v-model="form.message" placeholder="Hello.."></b-form-textarea>
+          <b-form-textarea id="message" name="message" rows="5" v-model="form.message" required placeholder="Hello.."></b-form-textarea>
         </b-form-group>
         <b-row align-h="center">
           <b-button type="submit" variant="dark"> <b-icon icon="caret-right-fill" aria-hiddens="true"></b-icon> Submit</b-button>
